@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoCrate - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">EcoCrate</div>
+
+            <div class="search-wrapper">
+                <input type="text" placeholder="Search products..." class="search-input" />
+                <button class="search-btn">🔍</button>
+            </div>
+
+            <!-- Mobile Navbar Menu -->
+            <nav class="navbar" id="mobileNav">
+                <span class="close-icon" onclick="closeMenu()">✖</span>
+                <a class="active" href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <!-- Mobile Toggle Button -->
+            <div class="menu-toggle" onclick="openMenu()">☰</div>
+        </div>
+    </header>
+
+
+
+    <!-- Section 1: Hero -->
+    <section class="hero">
+        <div class="hero-left">
+            <h1>
+                Embrace a Greener Future <br />
+                with <span class="brand">EcoCrate</span>
+            </h1>
+            <p>
+                Discover a curated collection of sustainable, eco-friendly products crafted to
+                help you live better — naturally. Shop guilt-free with our planet-first promise.
+            </p>
+            <a href="shop.html" class="hero-btn">
+                <span class="arrow">Shop Now <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+        </div>
+        <div class="hero-right">
+            <img src="img/img1.jpeg" class="slide-img" alt="Eco Products">
+        </div>
+    </section>
+
+
+    <!-- Section 2: Featured Products -->
+    <section class="featured">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="img/img1.jpeg" alt="Eco Bottle" />
+                <h3>Eco Water Bottle</h3>
+                <p>Reusable, BPA-free bottle made from sustainable materials.</p>
+                <a href="" class="hero-btn">
+                    <span class="arrow">Shop Now <i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+            </div>
+
+            <div class="product-card">
+                <img src="img/img3.jpeg" alt="Bamboo Toothbrush" />
+                <h3>Bamboo Toothbrush</h3>
+                <p>Eco-friendly toothbrush with biodegradable bamboo handle.</p>
+                <a href="" class="hero-btn">
+                    <span class="arrow">Shop Now <i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+            </div>
+
+            <div class="product-card">
+                <img src="img/img4.jpeg" alt="Organic Tote Bag" />
+                <h3>Organic Tote Bag</h3>
+                <p>Stylish and reusable tote made with 100% organic cotton.</p>
+                <a href="" class="hero-btn">
+                    <span class="arrow">Shop Now <i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section 3: Banner -->
+    <section class="banner">
+        <div class="banner-box">
+            <span class="icon">🚚</span>
+            <div class="text">
+                <h3>Free Delivery</h3>
+                <p>On all orders over ₹500</p>
+            </div>
+        </div>
+        <div class="banner-box">
+            <span class="icon">💰</span>
+            <div class="text">
+                <h3>Money Back Guarantee</h3>
+                <p>7-day hassle-free return</p>
+            </div>
+        </div>
+        <div class="banner-box">
+            <span class="icon">⭐</span>
+            <div class="text">
+                <h3>Quality Assured</h3>
+                <p>Eco-friendly & durable products</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section 4: Best Sellers -->
+    <section class="best-sellers">
+        <h2>🔥 Best Sellers</h2>
+        <div class="product-grid">
+
+            <div class="product-card">
+                <img src="img/img3.jpeg" alt="Eco Lunchbox" />
+                <h3>Eco Lunchbox</h3>
+                <p>Reusable stainless steel lunchbox for healthy, waste-free meals.</p>
+                <a href="" class="hero-btn">
+                    <span class="arrow">Shop Now <i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+            </div>
+
+            <div class="product-card">
+                <img src="img/img1.jpeg" alt="Organic Shampoo Bar" />
+                <h3>Organic Shampoo Bar</h3>
+                <p>Zero-waste, handmade shampoo bar with natural ingredients.</p>
+                <a href="" class="hero-btn">
+                    <span class="arrow">Shop Now <i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+            </div>
+
+            <div class="product-card">
+                <img src="img/img4.jpeg" alt="Compost Bin" />
+                <h3>Kitchen Compost Bin</h3>
+                <p>Stylish bin for food scraps — perfect for eco-conscious kitchens.</p>
+                <a href="" class="hero-btn">
+                    <span class="arrow">Shop Now <i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Section 5: Upcoming Products -->
+    <section class="upcoming">
+        <h2>Upcoming Products</h2>
+        <div class="product-grid">
+
+            <div class="product-card">
+                <img src="img/img3.jpeg" alt="Eco Lunchbox" />
+                <h3>Eco Lunchbox</h3>
+                <p>Reusable stainless steel lunchbox for healthy, waste-free meals.</p>
+                <a href="" class="hero-btn">
+                    <span class="arrow">Shop Now <i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+            </div>
+
+            <div class="product-card">
+                <img src="img/img1.jpeg" alt="Organic Shampoo Bar" />
+                <h3>Organic Shampoo Bar</h3>
+                <p>Zero-waste, handmade shampoo bar with natural ingredients.</p>
+                <a href="" class="hero-btn">
+                    <span class="arrow">Shop Now <i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+            </div>
+
+            <div class="product-card">
+                <img src="img/img4.jpeg" alt="Compost Bin" />
+                <h3>Kitchen Compost Bin</h3>
+                <p>Stylish bin for food scraps — perfect for eco-conscious kitchens.</p>
+                <a href="" class="hero-btn">
+                    <span class="arrow">Shop Now <i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-logo">EcoCrate</div>
+
+            <div class="quick-links">
+                <h4>Quick Links</h4>
+                <a href="#">Shop</a>
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <div class="newsletter">
+                <h4>Newsletter</h4>
+                <p>Get the latest eco-friendly updates and offers.</p>
+                <form>
+                    <input type="email" placeholder="Enter your email" required />
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2025 <span>EcoCrate</span>. All rights reserved.
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
